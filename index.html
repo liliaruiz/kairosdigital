@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kairos Digital | Sistemas de Captación que Multiplican Ventas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Cambiamos 'brand' de azul a Verde Esmeralda (Emerald)
+                        brand: {
+                            // Un slate muy oscuro para el fondo, casi negro, muy pro.
+                            950: '#0f172a', 
+                            900: '#1e293b',
+                            // Verdes vibrantes para acción y dinero
+                            500: '#10b981', // Emerald 500 (Botones primarios)
+                            600: '#059669', // Emerald 600 (Hover)
+                            300: '#6ee7b7', // Emerald 300 (Textos suaves)
+                        },
+                        // Color secundario de acento para degradados (Lime)
+                        accent: '#a3e635' // Lime 400
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ajuste fino para asegurar que el degradado se vea brutal */
+        .text-gradient {
+            background: linear-gradient(to right, #10b981, #a3e635);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="./assets/img/logo.png" alt="Kairos Digital" class="h-20">
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#servicios" class="text-sm font-semibold text-slate-600 hover:text-brand-500 transition">Servicios</a>
+                    <a href="#portafolio" class="text-sm font-semibold text-slate-600 hover:text-brand-500 transition">Demos</a>
+                    <a href="https://wa.me/5216632212073" target="_blank" class="bg-slate-950 text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-brand-600 transition shadow-lg flex items-center gap-2">
+                        <svg class="w-4 h-4 text-brand-300" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                        Vende Más Hoy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-24 lg:pt-48 lg:pb-36 bg-slate-950 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#a3e635;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <polygon points="0,100 100,0 100,100" fill="url(#grad1)" />
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold bg-brand-500/10 text-brand-300 mb-8 border border-brand-500/20">
+                 Resultados rápidos, sin complicación
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-tight mb-8">
+                Llevamos <br class="hidden md:block"> clientes cualificados <br class="hidden md:block"> a <span class="text-gradient">tu WhatsApp.</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto font-light mb-12 leading-relaxed">
+                Diseñamos sistemas de captación de alto rendimiento: Landing Pages y Perfiles Digitales. Soluciones listas para entregarte en <strong class="text-white font-semibold">menos de 24 horas.</strong>
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="https://wa.me/5216632212073" target="_blank" class="bg-brand-500 text-slate-950 px-10 py-5 rounded-full font-extrabold text-lg hover:bg-white transition shadow-2xl hover:scale-105 duration-300">
+                    Quiero Más Ventas
+                </a>
+                <a href="#portafolio" class="border-2 border-slate-700 text-white px-10 py-5 rounded-full font-bold text-lg hover:border-brand-300 hover:text-brand-300 transition">
+                    Ver Ejemplos Reales
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-950 tracking-tight">Sistemas que Funcionan Hoy</h2>
+                <p class="mt-4 text-xl text-slate-600 font-light">Nos enfocamos en la velocidad y la conversión. Sin proyectos eternos.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-brand-500/20 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-brand-500 text-slate-950 rounded-2xl flex items-center justify-center mb-8 transform group-hover:rotate-6 transition">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-950 mb-4">Landing Pages de Alta Conversión</h3>
+                    <p class="text-slate-600 leading-relaxed">Páginas de un solo objetivo diseñadas matemáticamente para transformar tráfico frío en prospectos calificados listos para comprar.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-brand-500/20 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-accent text-slate-950 rounded-2xl flex items-center justify-center mb-8 transform group-hover:rotate-6 transition">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-950 mb-4">Tarjetas Digitales para Asesores</h3>
+                    <p class="text-slate-600 leading-relaxed">Perfiles profesionales para vendedores (automotrices, inmobiliarios) con catálogo rápido y contacto a WhatsApp a un clic.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-brand-500/20 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-brand-500 text-slate-950 rounded-2xl flex items-center justify-center mb-8 transform group-hover:rotate-6 transition">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-950 mb-4">Embudos de WhatsApp</h3>
+                    <p class="text-slate-600 leading-relaxed">Integración de botones inteligentes y enlaces directos con mensajes pre-llenados para que el cliente te contacte al instante.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portafolio" class="py-24 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-950 tracking-tight">Demos que Demuestran</h2>
+                <p class="mt-4 text-xl text-slate-600 font-light">No te imaginas cómo se ve, te lo enseñamos funcionando.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 group">
+                    <div class="h-60 bg-slate-950 flex items-center justify-center border-b-4 border-brand-500 overflow-hidden">
+                        <span class="text-brand-300 font-mono text-sm">[ Screenshot Demo Nuria ]</span>
+                    </div>
+                    <div class="p-8">
+                        <span class="text-xs font-bold text-brand-600 uppercase tracking-wider bg-brand-50 px-3 py-1 rounded-full">Landing Page</span>
+                        <h4 class="text-2xl font-bold mt-4 mb-3 text-slate-950">Perfil de Asesora: Nuria</h4>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Página personal para captación de leads orientada a marca personal, con integración de agenda y contacto directo por WhatsApp.</p>
+                        <a href="https://www.misitiok.com/" class="inline-flex items-center text-brand-500 font-semibold hover:text-slate-950 transition">Ver Demo Funcionando <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7-7 7"></path></svg></a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 group">
+                    <div class="h-60 bg-slate-900 flex items-center justify-center border-b-4 border-accent overflow-hidden">
+                        <span class="text-accent font-mono text-sm">[ Screenshot Asesor Automotriz ]</span>
+                    </div>
+                    <div class="p-8">
+                        <span class="text-xs font-bold text-slate-600 uppercase tracking-wider bg-slate-100 px-3 py-1 rounded-full">Catálogo & Ventas</span>
+                        <h4 class="text-2xl font-bold mt-4 mb-3 text-slate-950">Ficha de Vendedor Automotriz</h4>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Solución para asesores de agencia. Muestra inventario destacado y envía al cliente a WhatsApp con el modelo de interés pre-seleccionado.</p>
+                        <a href="#" class="inline-flex items-center text-brand-500 font-semibold hover:text-slate-950 transition">Ver Demo Funcionando <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7-7 7"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-950 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-950 via-slate-950 to-brand-950 opacity-50"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-8 tracking-tight leading-tight">¿Listo para dejar de perder clientes <span class="text-gradient">hoy mismo?</span></h2>
+            <p class="text-slate-300 text-xl md:text-2xl mb-12 font-light max-w-2xl mx-auto">Cuéntanos qué vendes y te decimos qué sistema necesitas. Sin compromisos y en menos de 24 horas.</p>
+            <a href="https://wa.me/5216632212073" target="_blank" class="inline-block bg-white text-slate-950 px-10 py-5 rounded-full font-extrabold text-xl hover:bg-brand-500 transition shadow-2xl hover:scale-105 duration-300">
+                Iniciar Chat en WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-500 py-12 text-center text-sm border-t border-slate-800">
+        <p>&copy; 2026 Kairos Digital. Sistemas de venta probados y rápidos.</p>
+    </footer>
+
+    <a href="https://wa.me/5216632212073?text=Hola%20Kairos,%20quiero%20información%20para%20una%20página%20web" 
+       target="_blank" 
+       class="fixed bottom-6 right-6 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:bg-[#128C7E] hover:scale-110 transition-transform duration-300 z-50">
+        <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+</body>
+</html>
